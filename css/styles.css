@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "Zodiak";
+  src: url("/fonts/zodiak.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+  font-family: "Zodiak", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .first-section {
+    background-image: url(/images/image-background-main-desktop.jpg);
+    padding-top: 25px;
+  }
+  .first-section header {
+    padding: 0 15px;
+  }
+  .first-section header nav {
+    display: flex;
+    gap: 33%;
+  }
+  .first-section header nav div {
+    width: 16%;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    background-color: #41C67E;
+    border-radius: 33px;
+    border-collapse: separate;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

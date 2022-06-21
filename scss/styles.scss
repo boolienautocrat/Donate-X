@@ -1,0 +1,35 @@
+@use 'defaults' as d;
+
+h1,
+h2,
+h3 {
+    color: #fff;
+    font-family: 'Zodiak', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+
+    .first-section {
+        background-image: url(/images/image-background-main-desktop.jpg);
+        padding-top: 25px;
+
+        header {
+            padding: 0 15px;
+
+            nav {
+                display: flex;
+                gap: 33%;
+
+                div {
+                    width: 16%;
+                    padding: 15px;
+                    display: inline-block;
+                    text-align: center;
+                    background-color: #41C67E;
+                    border-radius: 33px;
+                    border-collapse: separate;
+                }
+            }
+        }
+    }
+}
