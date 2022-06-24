@@ -14,4 +14,22 @@
     box-sizing: border-box;
 }
 
-$prim-col: #41C67E
+$prim-col: #41C67E;
+
+@mixin button ($bk, $w, $br) {
+    width: 90%;
+    padding: 20px;
+    color: #fff;
+    background-color: $bk;
+    font-size: 18px;
+    font-weight: $w;
+    border-radius: 50px;
+    border: $br;
+}
+
+@mixin flex ($d, $a, $g) {
+    display: flex;
+    flex-direction: $d;
+    align-items: $a;
+    gap: $g;
+}

@@ -1,33 +1,76 @@
-@use 'defaults' as d;
+@use 'extras' as e;
 
 h1,
-h2,
-h3 {
+h2 {
     color: #fff;
     font-family: 'Zodiak', sans-serif;
+}
+
+p {
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
 }
 
 @media screen and (max-width: 600px) {
 
     .first-section {
-        background-image: url(/images/image-background-main-desktop.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/image-background-main-desktop.jpg);
         padding-top: 25px;
+        background-position: center center;
+        filter: brightness(90%);
 
         header {
             padding: 0 15px;
 
             nav {
-                display: flex;
-                gap: 33%;
+                @include e.flex (row, center, 33%);
 
                 div {
                     width: 16%;
                     padding: 15px;
                     display: inline-block;
                     text-align: center;
-                    background-color: #41C67E;
+                    background-color: e.$prim-col;
                     border-radius: 33px;
                     border-collapse: separate;
+                }
+            }
+        }
+
+        main {
+            padding-top: 60px;
+
+            h1 {
+                font-size: 32px;
+                text-align: center;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            p {
+                text-align: center;
+                line-height: 1.6;
+                font-size: 18px;
+                margin-top: 20px;
+                margin-bottom: 35px;
+            }
+
+            div {
+                @include e.flex (column, center, 20px);
+                padding-bottom: 130px;
+
+                button {
+                    cursor: pointer;
+                    @include e.button (e.$prim-col, 700, e.$prim-col);
+                }
+
+                .btn2 {
+                    @include e.button (transparent, 400, #fff 1.7px solid);
+                }
+
+                .btn2:hover {
+                    transform: scale(0.97);
+                    @include e.button (e.$prim-col, 400, e.$prim-col 1.7px solid);
                 }
             }
         }

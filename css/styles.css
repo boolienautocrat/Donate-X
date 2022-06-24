@@ -13,22 +13,30 @@
 }
 
 h1,
-h2,
-h3 {
+h2 {
   color: #fff;
   font-family: "Zodiak", sans-serif;
 }
 
+p {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+
 @media screen and (max-width: 600px) {
   .first-section {
-    background-image: url(/images/image-background-main-desktop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/image-background-main-desktop.jpg);
     padding-top: 25px;
+    background-position: center center;
+    filter: brightness(90%);
   }
   .first-section header {
     padding: 0 15px;
   }
   .first-section header nav {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 33%;
   }
   .first-section header nav div {
@@ -39,6 +47,61 @@ h3 {
     background-color: #41C67E;
     border-radius: 33px;
     border-collapse: separate;
+  }
+  .first-section main {
+    padding-top: 60px;
+  }
+  .first-section main h1 {
+    font-size: 32px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .first-section main p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .first-section main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 130px;
+  }
+  .first-section main div button {
+    cursor: pointer;
+    width: 90%;
+    padding: 20px;
+    color: #fff;
+    background-color: #41C67E;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: #41C67E;
+  }
+  .first-section main div .btn2 {
+    width: 90%;
+    padding: 20px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 50px;
+    border: #fff 1.7px solid;
+  }
+  .first-section main div .btn2:hover {
+    transform: scale(0.97);
+    width: 90%;
+    padding: 20px;
+    color: #fff;
+    background-color: #41C67E;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 50px;
+    border: #41C67E 1.7px solid;
   }
 }
 
