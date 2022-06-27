@@ -18,12 +18,21 @@ p {
         padding-top: 25px;
         background-position: center center;
         filter: brightness(90%);
+        background-size: cover;
 
         header {
             padding: 0 15px;
 
             nav {
                 @include e.flex (row, center, 33%);
+
+                img {
+                    transition: transform .3s;
+
+                    &:hover {
+                        transform: scale(0.95);
+                    }
+                }
 
                 div {
                     width: 16%;
@@ -57,11 +66,16 @@ p {
 
             div {
                 @include e.flex (column, center, 20px);
-                padding-bottom: 130px;
+                padding-bottom: 110px;
 
                 button {
                     cursor: pointer;
                     @include e.button (e.$prim-col, 700, e.$prim-col);
+                    transition: transform .3s;
+
+                    &:hover {
+                        transform: scale(0.97);
+                    }
                 }
 
                 .btn2 {
@@ -69,7 +83,6 @@ p {
                 }
 
                 .btn2:hover {
-                    transform: scale(0.97);
                     @include e.button (e.$prim-col, 400, e.$prim-col 1.7px solid);
                 }
             }

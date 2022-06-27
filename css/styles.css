@@ -29,6 +29,7 @@ p {
     padding-top: 25px;
     background-position: center center;
     filter: brightness(90%);
+    background-size: cover;
   }
   .first-section header {
     padding: 0 15px;
@@ -38,6 +39,12 @@ p {
     flex-direction: row;
     align-items: center;
     gap: 33%;
+  }
+  .first-section header nav img {
+    transition: transform 0.3s;
+  }
+  .first-section header nav img:hover {
+    transform: scale(0.95);
   }
   .first-section header nav div {
     width: 16%;
@@ -69,7 +76,7 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding-bottom: 130px;
+    padding-bottom: 110px;
   }
   .first-section main div button {
     cursor: pointer;
@@ -81,6 +88,10 @@ p {
     font-weight: 700;
     border-radius: 50px;
     border: #41C67E;
+    transition: transform 0.3s;
+  }
+  .first-section main div button:hover {
+    transform: scale(0.97);
   }
   .first-section main div .btn2 {
     width: 90%;
@@ -93,7 +104,6 @@ p {
     border: #fff 1.7px solid;
   }
   .first-section main div .btn2:hover {
-    transform: scale(0.97);
     width: 90%;
     padding: 20px;
     color: #fff;
