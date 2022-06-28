@@ -47,6 +47,7 @@ p {
     transform: scale(0.95);
   }
   .first-section header nav div {
+    cursor: pointer;
     width: 16%;
     padding: 15px;
     display: inline-block;
@@ -54,6 +55,10 @@ p {
     background-color: #41C67E;
     border-radius: 33px;
     border-collapse: separate;
+    transition: transform 0.3s;
+  }
+  .first-section header nav div:hover {
+    transform: scale(0.93);
   }
   .first-section main {
     padding-top: 60px;

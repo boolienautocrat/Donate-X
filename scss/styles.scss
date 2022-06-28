@@ -35,6 +35,7 @@ p {
                 }
 
                 div {
+                    cursor: pointer;
                     width: 16%;
                     padding: 15px;
                     display: inline-block;
@@ -42,6 +43,11 @@ p {
                     background-color: e.$prim-col;
                     border-radius: 33px;
                     border-collapse: separate;
+                    transition: transform .3s;
+
+                    &:hover {
+                        transform: scale(0.93);
+                    }
                 }
             }
         }
