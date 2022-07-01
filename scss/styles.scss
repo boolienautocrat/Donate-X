@@ -108,6 +108,14 @@ p {
         color: e.$prim-col;
     }
 
+    .main-heading {
+        text-align: center;
+        font-size: 1.625rem;
+        color: e.$sec-color;
+        width: 85%;
+        margin: 10px auto 0;
+    }
+
     .sub-description {
         color: e.$description-col;
         font-size: 1.125rem;
@@ -117,15 +125,7 @@ p {
     }
 
     .achievements {
-        padding-top: 70px;
-
-        h2 {
-            text-align: center;
-            font-size: 1.625rem;
-            color: e.$sec-color;
-            width: 85%;
-            margin: 10px auto 0;
-        }
+        padding: 70px 0 70px;
 
         p {
             width: 90%;
@@ -145,7 +145,25 @@ p {
         }
 
         .achievements-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+
+            div {
+                text-align: center;
+                align-items: center;
+                gap: 5px;
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 48%;
+                }
+            }
+
             h3 {
+                margin-top: 15px;
                 color: #19474e;
             }
 
