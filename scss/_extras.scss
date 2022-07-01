@@ -27,6 +27,12 @@ $description-col: #5D6A6A;
     font-weight: $w;
     border-radius: 50px;
     border: $br;
+    cursor: pointer;
+    transition: transform .3s;
+
+    &:hover {
+        transform: scale(0.97);
+    }
 }
 
 @mixin flex ($d, $a, $g) {
