@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @font-face {
   font-family: "Zodiak";
   src: url("/fonts/zodiak.otf") format("opentype");
@@ -25,24 +25,6 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .donate-btn {
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-    width: 90%;
-    padding: 20px;
-    color: #fff;
-    background-color: #41C67E;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 50px;
-    border: #41C67E;
-    transition: transform 0.3s;
-  }
-  .donate-btn:hover {
-    transform: scale(0.97);
-  }
-
   .first-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/image-background-main-desktop.jpg);
     background-position: center center;
@@ -101,9 +83,22 @@ p {
     gap: 20px;
     padding-bottom: 110px;
   }
-  .first-section main div .btn2 {
-    transition: transform 0.3s;
+  .first-section main div button {
     cursor: pointer;
+    width: 90%;
+    padding: 20px;
+    color: #fff;
+    background-color: #41C67E;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: #41C67E;
+    transition: transform 0.3s;
+  }
+  .first-section main div button:hover {
+    transform: scale(0.97);
+  }
+  .first-section main div .btn2 {
     width: 90%;
     padding: 20px;
     color: #fff;
@@ -122,55 +117,10 @@ p {
     font-weight: 400;
     border-radius: 50px;
     border: #41C67E 1.7px solid;
-    transform: scale(0.97);
   }
 
-  .subheading {
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.7px;
-    font-size: 18px;
-    color: #41C67E;
-  }
-
-  .sub-description {
-    color: #5D6A6A;
-    font-size: 1.125rem;
-    text-align: center;
-    margin: 15px auto 0;
-    line-height: 1.6;
-  }
-
-  .achievements {
-    padding-top: 70px;
-  }
-  .achievements h2 {
-    text-align: center;
-    font-size: 1.625rem;
-    color: #19474E;
-    width: 85%;
-    margin: 10px auto 0;
-  }
   .achievements p {
-    width: 90%;
-    font-weight: 400;
-  }
-  .achievements button {
-    margin-top: 35px;
-    padding: 18px 0;
-  }
-  .achievements hr {
-    color: #dae5e4;
-    margin: 50px auto;
-    width: 80%;
-    border-bottom: 0;
-  }
-  .achievements .achievements-grid h3 {
-    color: #19474e;
-  }
-  .achievements .achievements-grid p {
-    color: #5d6a6a;
+    color: #41C67E;
   }
 }
 

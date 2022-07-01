@@ -1,7 +1,8 @@
 @use 'extras' as e;
 
 h1,
-h2 {
+h2,
+h3 {
     color: #fff;
     font-family: 'Zodiak', sans-serif;
 }
@@ -12,16 +13,26 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+    .donate-btn {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        @include e.button (e.$prim-col, 600, e.$prim-col);
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(0.97);
+        }
+    }
 
     .first-section {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/image-background-main-desktop.jpg);
-        padding-top: 25px;
         background-position: center center;
         filter: brightness(90%);
         background-size: cover;
 
         header {
-            padding: 0 15px;
+            padding: 25px 15px 0;
 
             nav {
                 @include e.flex (row, center, 33%);
@@ -74,23 +85,72 @@ p {
                 @include e.flex (column, center, 20px);
                 padding-bottom: 110px;
 
-                button {
-                    cursor: pointer;
-                    @include e.button (e.$prim-col, 700, e.$prim-col);
+                .btn2 {
                     transition: transform .3s;
+                    cursor: pointer;
+                    @include e.button (transparent, 400, #fff 1.7px solid);
 
                     &:hover {
+                        @include e.button (e.$prim-col, 400, e.$prim-col 1.7px solid);
                         transform: scale(0.97);
                     }
                 }
+            }
+        }
+    }
 
-                .btn2 {
-                    @include e.button (transparent, 400, #fff 1.7px solid);
-                }
+    .subheading {
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.7px;
+        font-size: 18px;
+        color: e.$prim-col;
+    }
 
-                .btn2:hover {
-                    @include e.button (e.$prim-col, 400, e.$prim-col 1.7px solid);
-                }
+    .sub-description {
+        color: e.$description-col;
+        font-size: 1.125rem;
+        text-align: center;
+        margin: 15px auto 0;
+        line-height: 1.6;
+    }
+
+    .achievements {
+        padding-top: 70px;
+
+        h2 {
+            text-align: center;
+            font-size: 1.625rem;
+            color: e.$sec-color;
+            width: 85%;
+            margin: 10px auto 0;
+        }
+
+        p {
+            width: 90%;
+            font-weight: 400;
+        }
+
+        button {
+            margin-top: 35px;
+            padding: 18px 0;
+        }
+
+        hr {
+            color: #dae5e4;
+            margin: 50px auto;
+            width: 80%;
+            border-bottom: 0;
+        }
+
+        .achievements-grid {
+            h3 {
+                color: #19474e;
+            }
+
+            p {
+                color: #5d6a6a;
             }
         }
     }
