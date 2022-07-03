@@ -14,12 +14,14 @@
 
 h1,
 h2,
-h3 {
-  color: #fff;
+h3,
+h4 {
   font-family: "Zodiak", sans-serif;
+  color: #19474E;
 }
 
 p {
+  color: #5D6A6A;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -81,6 +83,7 @@ p {
     padding-top: 60px;
   }
   .first-section main h1 {
+    color: #fff;
     font-size: 32px;
     text-align: center;
     width: 90%;
@@ -144,7 +147,7 @@ p {
 
   .main-heading {
     text-align: center;
-    font-size: 1.625rem;
+    font-size: 1.56rem;
     color: #19474E;
     width: 85%;
     margin: 10px auto 0;
@@ -269,6 +272,43 @@ p {
   .about-us .aboutUs-btn:hover {
     color: #fff;
     background-color: #41C67E;
+  }
+
+  .what-we-do {
+    padding: 70px 0 70px;
+    background-color: #ebf3ec;
+  }
+  .what-we-do .objectives-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    gap: 30px;
+    background-color: #ebf3ec;
+  }
+  .what-we-do .objectives-wrapper .objective-card {
+    padding: 40px 20px 30px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    width: 92%;
+    background-color: #fff;
+  }
+  .what-we-do .objectives-wrapper .objective-card img {
+    width: 33%;
+  }
+  .what-we-do .objectives-wrapper .objective-card h4 {
+    font-size: 1.25rem;
+  }
+  .what-we-do .objectives-wrapper .objective-card p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .what-we-do button {
+    margin-top: 40px;
   }
 }
 
