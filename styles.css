@@ -32,6 +32,12 @@ hr {
   border-bottom: 0;
 }
 
+a {
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
 @media screen and (max-width: 600px) {
   .donate-btn {
     display: block;
@@ -88,7 +94,7 @@ hr {
     display: inline-block;
     text-align: center;
     background-color: #41C67E;
-    border-radius: 33px;
+    border-radius: 100%;
     border-collapse: separate;
     transition: transform 0.3s;
   }
@@ -97,8 +103,39 @@ hr {
   }
 
   header.active {
-    background-color: #182e35;
+    background-color: #142a31;
     transition: background-color 2700ms linear;
+  }
+
+  .ham-menu {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    background-color: #142a31;
+    top: 0;
+    width: 100vw;
+    padding: 150px 0 0 15px;
+  }
+  .ham-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    gap: 20px;
+  }
+  .ham-menu ul li {
+    font-size: 22px;
+  }
+  .ham-menu ul li a {
+    transition: color 150ms linear;
+  }
+  .ham-menu ul li a:hover {
+    color: #41C67E;
+  }
+  .ham-menu button {
+    position: absolute;
+    top: 77.3195876289vh;
+    padding: 25px 0;
   }
 
   .first-section main {
@@ -108,7 +145,7 @@ hr {
     color: #fff;
     font-size: 32px;
     text-align: center;
-    width: 90%;
+    width: 90vw;
     margin: 0 auto;
   }
   .first-section main p {
@@ -116,8 +153,8 @@ hr {
     text-align: center;
     line-height: 1.6;
     font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 35px;
+    width: 91vw;
+    margin: 20px auto 35px;
   }
   .first-section main div {
     display: flex;

@@ -29,6 +29,13 @@ hr {
     border-bottom: 0;
 }
 
+a {
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    color: #fff;
+
+}
+
 @media screen and (max-width: 600px) {
     .donate-btn {
         display: block;
@@ -72,7 +79,7 @@ hr {
                 display: inline-block;
                 text-align: center;
                 background-color: e.$prim-col;
-                border-radius: 33px;
+                border-radius: 100%;
                 border-collapse: separate;
                 transition: transform .3s;
 
@@ -84,8 +91,41 @@ hr {
     }
 
     header.active {
-        background-color: #182e35;
+        background-color: #142a31;
         transition: background-color 2700ms linear;
+    }
+
+    .ham-menu {
+        display: none;
+        position: absolute;
+        height: 100vh;
+        background-color: #142a31;
+        top: 0;
+        width: 100vw;
+        padding: 150px 0 0 15px;
+
+        ul {
+            list-style: none;
+            @include e.flex (column, unset, 20px);
+
+            li {
+                font-size: 22px;
+
+                a {
+                    transition: color 150ms linear;
+                }
+
+                a:hover {
+                    color: e.$prim-col;
+                }
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 77.319587628866vh;
+            padding: 25px 0;
+        }
     }
 
     .first-section {
@@ -97,7 +137,7 @@ hr {
                 color: #fff;
                 font-size: 32px;
                 text-align: center;
-                width: 90%;
+                width: 90vw;
                 margin: 0 auto;
             }
 
@@ -106,8 +146,8 @@ hr {
                 text-align: center;
                 line-height: 1.6;
                 font-size: 18px;
-                margin-top: 20px;
-                margin-bottom: 35px;
+                width: 91vw;
+                margin: 20px auto 35px
             }
 
             div {
