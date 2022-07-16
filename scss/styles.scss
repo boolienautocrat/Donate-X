@@ -1,13 +1,4 @@
 @use 'extras' as e;
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
-
-@font-face {
-    font-family: 'Zodiak';
-    src: url('./fonts/zodiak.otf') format('opentype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
 
 h1,
 h2,
@@ -34,6 +25,33 @@ a {
     text-decoration: none;
     color: #fff;
 
+}
+
+@keyframes menuShow {
+    0% {
+        opacity: 0.3;
+        right: 300px;
+    }
+
+    25% {
+        opacity: 0.5;
+        right: 225px;
+    }
+
+    50% {
+        opacity: 0.7;
+        width: 150vw;
+    }
+
+    75% {
+        opacity: 0.8;
+        width: 75vw;
+    }
+
+    100% {
+        opacity: 1;
+        width: 0vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -103,6 +121,8 @@ a {
         top: 0;
         width: 100vw;
         padding: 150px 0 0 15px;
+        transition: display 500ms linear;
+        animation: menuShow ease-in-out infinite;
 
         ul {
             list-style: none;
