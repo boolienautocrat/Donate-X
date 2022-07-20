@@ -66,7 +66,7 @@ a {
     padding: 0 15px 0;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
   }
   header nav {
     display: flex;
@@ -74,6 +74,7 @@ a {
     align-items: center;
     gap: 33%;
     justify-content: space-between;
+    z-index: 3;
   }
   header nav img {
     transition: transform 0.3s;
@@ -104,11 +105,13 @@ a {
   }
 
   .ham-menu {
+    position: absolute;
     display: none;
-    position: sticky;
+    z-index: 2;
     height: 100vh;
     background-color: #142a31;
-    top: 0vh;
+    top: 0;
+    left: 0;
     width: 100vw;
     padding: 150px 0 0 15px;
     transition: display 500ms linear;
@@ -485,7 +488,7 @@ footer .copyright {
   }
 
   body {
-    background-position: -160px -50px;
+    background-position: -160px -43px;
     background-size: 154%;
   }
 
@@ -505,6 +508,32 @@ footer .copyright {
   hr {
     margin: 5rem auto;
     width: 85%;
+  }
+
+  header {
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.6% 0;
+  }
+  header .ham-btn {
+    display: none;
+  }
+  header .ham-menu {
+    display: block !important;
+    height: auto;
+    background-color: unset;
+    width: auto;
+    padding: 0;
+    position: unset;
+  }
+  header .ham-menu ul {
+    gap: 4vw;
+    flex-direction: row;
+  }
+  header .ham-menu button {
+    display: none;
   }
 
   .first-section main h1 {
