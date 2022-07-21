@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -275,6 +279,7 @@ a {
     filter: brightness(55%);
     border-radius: 15px;
     width: 100%;
+    transition: transform ease 0.3s;
   }
   .about-us .video-container button {
     z-index: 1;
@@ -646,6 +651,174 @@ footer .copyright {
   footer .socials,
 footer .copyright {
     padding-left: 1.875rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-position: 0px -100px;
+    background-size: 105%;
+  }
+
+  .main-heading {
+    width: 35%;
+  }
+
+  .donate-btn {
+    width: 15%;
+  }
+
+  .first-section {
+    padding-bottom: 120px;
+  }
+  .first-section main {
+    padding: 100px 0 0;
+  }
+  .first-section main h1 {
+    font-size: 56px;
+    width: 70vw;
+  }
+  .first-section main p {
+    width: 50vw;
+  }
+  .first-section main div .btn2 {
+    width: 17%;
+  }
+  .first-section main div .btn2:hover {
+    width: 17%;
+  }
+
+  .achievements {
+    display: flex;
+    flex-direction: row;
+    padding: 150px 0 150px;
+  }
+  .achievements div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: flex-start;
+    padding-left: 80px;
+  }
+  .achievements div p {
+    margin: 0;
+    text-align: left;
+  }
+  .achievements div .main-heading {
+    text-align: left;
+    width: 90%;
+    margin: 15px 0 25px;
+  }
+  .achievements div .sub-description {
+    width: 80% !important;
+  }
+  .achievements div .donate-btn {
+    margin: 30px 0;
+  }
+  .achievements hr {
+    margin: 0;
+    width: 0;
+  }
+  .achievements .achievements-grid {
+    flex-basis: 55%;
+    justify-content: flex-start;
+    flex-direction: row;
+    column-gap: 25px;
+    row-gap: 0;
+    padding: 0;
+  }
+  .achievements .achievements-grid div {
+    flex-basis: 30%;
+  }
+
+  .about-us {
+    padding-top: 8.125rem;
+  }
+  .about-us .sub-description {
+    width: 45% !important;
+  }
+  .about-us .video-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0;
+    transform: scale(0.85);
+  }
+  .about-us .video-container button {
+    position: absolute;
+    top: auto;
+    padding: 25px;
+  }
+  .about-us .video-container button:hover ~ .thumbnail-img {
+    transform: scale(0.94);
+  }
+  .about-us .video-container .thumbnail-img {
+    transform: scale(0.97);
+    transition: transform 0.3s;
+  }
+  .about-us .buttons {
+    margin: 20px 0 0;
+  }
+  .about-us .buttons .aboutUs-btn {
+    width: 13%;
+  }
+
+  .what-we-do .objectives-wrapper .objective-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5625rem;
+  }
+  .what-we-do .objectives-wrapper .objective-card img {
+    width: 30%;
+  }
+  .what-we-do .objectives-wrapper .objective-card h4 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  .what-we-do button {
+    margin: 6.25rem auto 0;
+  }
+
+  .our-partners-wrapper {
+    padding-bottom: 6.25rem;
+  }
+  .our-partners-wrapper .our-partners {
+    padding: 6.25rem 0 6.25rem;
+  }
+  .our-partners-wrapper .our-partners .mainheading {
+    width: 45%;
+    margin: 1.5625rem auto 0;
+    font-size: 2.5rem;
+  }
+  .our-partners-wrapper .our-partners .partners {
+    width: 55%;
+    margin: 5.625rem auto 0;
+  }
+
+  footer {
+    background-color: #122930;
+  }
+  footer .image-wrapper {
+    padding: 5rem 0 0;
+  }
+  footer .footer-wrapper {
+    display: flex;
+  }
+  footer .footer-wrapper .text {
+    width: 60%;
+  }
+  footer .footer-wrapper .credits {
+    width: 40%;
+  }
+  footer .footer-wrapper .text,
+footer .footer-wrapper .socials,
+footer .footer-wrapper .copyright {
+    padding-left: 3.75rem;
+  }
+  footer .footer-wrapper .credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
