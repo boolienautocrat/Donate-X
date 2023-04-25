@@ -24,6 +24,20 @@ a {
 
 }
 
+.progress-container {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 6px;
+
+    div {
+        width: 0%;
+        height: 100%;
+        background-color: #41C67E;
+    }
+}
+
 @media screen and (min-width: 320px) {
     .donate-btn {
         display: block;
@@ -35,7 +49,6 @@ a {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/image-background-main-desktop.jpg);
         background-position: -300px -40px;
         background-repeat: no-repeat;
-        filter: brightness(90%);
         background-size: 270%;
     }
 
@@ -43,7 +56,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 90px;
+        height: 75px;
         padding: 0 15px 0;
         position: sticky;
         top: 0;
@@ -441,7 +454,7 @@ a {
 
                 span {
                     font-size: 18px;
-                    text-decoration: underline;
+                    font-weight: 600;
                 }
             }
         }

@@ -29,3 +29,12 @@ hamBtn.onclick = () => {
         body.style.overflowY = "scroll"
     }
 }
+
+window.onscroll = function () {myFunction()}
+
+function myFunction() {
+    var winScroll = document.documentElement.scrollTop
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    var scroll = (winScroll / height) * 100
+    document.getElementById("myBar").style.width = scroll + "%"
+}

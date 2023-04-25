@@ -35,6 +35,19 @@ a {
   color: #fff;
 }
 
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 6px;
+}
+.progress-container div {
+  width: 0%;
+  height: 100%;
+  background-color: #41C67E;
+}
+
 @media screen and (min-width: 320px) {
   .donate-btn {
     display: block;
@@ -53,20 +66,17 @@ a {
   .donate-btn:hover {
     transform: scale(0.97);
   }
-
   body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/image-background-main-desktop.jpg);
     background-position: -300px -40px;
     background-repeat: no-repeat;
-    filter: brightness(90%);
     background-size: 270%;
   }
-
   header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90px;
+    height: 75px;
     padding: 0 15px 0;
     position: sticky;
     top: 0;
@@ -102,12 +112,10 @@ a {
   header nav div:hover {
     transform: scale(0.93);
   }
-
   header.active {
     background-color: #142a31;
     transition: background-color 2700ms linear;
   }
-
   .ham-menu {
     position: absolute;
     display: none;
@@ -142,7 +150,6 @@ a {
     top: 77.3195876289vh;
     padding: 25px 0;
   }
-
   .first-section main {
     padding-top: 60px;
   }
@@ -199,7 +206,6 @@ a {
   .first-section main div .btn2:hover:hover {
     transform: scale(0.97);
   }
-
   .subheading {
     margin: 0 auto;
     text-align: center;
@@ -208,7 +214,6 @@ a {
     font-size: 18px;
     color: #41C67E;
   }
-
   .main-heading {
     text-align: center;
     font-size: 1.56rem;
@@ -216,7 +221,6 @@ a {
     width: 85%;
     margin: 10px auto 0;
   }
-
   .sub-description {
     color: #5D6A6A;
     font-size: 1.125rem;
@@ -224,7 +228,6 @@ a {
     margin: 15px auto 0;
     line-height: 1.6;
   }
-
   .achievements {
     background-color: #fff;
     padding: 70px 0 70px;
@@ -265,7 +268,6 @@ a {
   .achievements .achievements-grid p {
     color: #5d6a6a;
   }
-
   .about-us {
     padding: 70px 0 70px;
     background-color: #f7f7f7;
@@ -338,7 +340,6 @@ a {
     color: #fff;
     background-color: #41C67E;
   }
-
   .what-we-do {
     padding: 4.375rem 0 4.375rem;
     background-color: #ebf3ec;
@@ -375,7 +376,6 @@ a {
   .what-we-do button {
     margin-top: 40px;
   }
-
   .our-partners-wrapper {
     padding-bottom: 70px;
     background-color: #fff;
@@ -408,7 +408,6 @@ a {
   .our-partners-wrapper .our-partners button {
     margin-top: 40px;
   }
-
   footer {
     background-color: #12262c;
   }
@@ -420,8 +419,8 @@ a {
     width: 100%;
   }
   footer .text,
-footer .socials,
-footer .copyright {
+  footer .socials,
+  footer .copyright {
     background-color: #142a31;
   }
   footer .text {
@@ -481,40 +480,35 @@ footer .copyright {
   }
   footer .copyright p span {
     font-size: 18px;
-    text-decoration: underline;
+    font-weight: 600;
   }
 }
 @media screen and (min-width: 600px) {
   .donate-btn,
-.achievements .donate-btn {
+  .achievements .donate-btn {
     width: 26%;
     padding: 25px 10px;
     margin: 0;
   }
-
   body {
     background-position: -160px -43px;
     background-size: 154%;
   }
-
   .main-heading {
     font-size: 2.3125rem;
     width: 65%;
     margin: 1.375rem auto 1.375rem;
   }
-
   .sub-description {
     font-size: 1.155rem;
     width: 70% !important;
     line-height: 1.8;
     margin: 0 auto;
   }
-
   hr {
     margin: 5rem auto;
     width: 85%;
   }
-
   header {
     margin-top: 20px;
     flex-direction: row;
@@ -540,7 +534,6 @@ footer .copyright {
   header .ham-menu button {
     display: none;
   }
-
   .first-section main h1 {
     font-size: 2.375rem;
   }
@@ -558,7 +551,6 @@ footer .copyright {
   .first-section main div .btn2:hover {
     width: 30%;
   }
-
   .achievements {
     padding: 5.625rem 0 5.625rem;
   }
@@ -574,7 +566,6 @@ footer .copyright {
   .achievements .achievements-grid div img {
     width: 58%;
   }
-
   .about-us {
     padding-top: 5.625rem;
   }
@@ -602,7 +593,6 @@ footer .copyright {
     margin: 0;
     width: 24%;
   }
-
   .what-we-do .objectives-wrapper {
     margin-top: 3.125rem;
     justify-content: center;
@@ -620,7 +610,6 @@ footer .copyright {
   .what-we-do button {
     margin: 3.125rem auto 0;
   }
-
   .our-partners-wrapper .our-partners .partners {
     column-gap: 80px;
     row-gap: 50px;
@@ -633,7 +622,6 @@ footer .copyright {
   .our-partners-wrapper .our-partners button {
     margin: 5rem auto 0;
   }
-
   footer .text {
     padding-left: 1.875rem;
   }
@@ -649,7 +637,7 @@ footer .copyright {
     border: 1px solid #22373d;
   }
   footer .socials,
-footer .copyright {
+  footer .copyright {
     padding-left: 1.875rem;
   }
 }
@@ -658,15 +646,12 @@ footer .copyright {
     background-position: 0px -100px;
     background-size: 105%;
   }
-
   .main-heading {
     width: 35%;
   }
-
   .donate-btn {
     width: 15%;
   }
-
   .first-section {
     padding-bottom: 120px;
   }
@@ -686,7 +671,6 @@ footer .copyright {
   .first-section main div .btn2:hover {
     width: 17%;
   }
-
   .achievements {
     display: flex;
     flex-direction: row;
@@ -729,7 +713,6 @@ footer .copyright {
   .achievements .achievements-grid div {
     flex-basis: 30%;
   }
-
   .about-us {
     padding-top: 8.125rem;
   }
@@ -762,7 +745,6 @@ footer .copyright {
   .about-us .buttons .aboutUs-btn {
     width: 13%;
   }
-
   .what-we-do .objectives-wrapper .objective-card {
     flex-direction: row;
     align-items: center;
@@ -778,7 +760,6 @@ footer .copyright {
   .what-we-do button {
     margin: 6.25rem auto 0;
   }
-
   .our-partners-wrapper {
     padding-bottom: 6.25rem;
   }
@@ -794,7 +775,6 @@ footer .copyright {
     width: 55%;
     margin: 5.625rem auto 0;
   }
-
   footer {
     background-color: #122930;
   }
@@ -811,8 +791,8 @@ footer .copyright {
     width: 40%;
   }
   footer .footer-wrapper .text,
-footer .footer-wrapper .socials,
-footer .footer-wrapper .copyright {
+  footer .footer-wrapper .socials,
+  footer .footer-wrapper .copyright {
     padding-left: 3.75rem;
   }
   footer .footer-wrapper .credits {
@@ -821,5 +801,3 @@ footer .footer-wrapper .copyright {
     justify-content: center;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
